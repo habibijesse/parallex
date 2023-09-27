@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100vh;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    background-image: url('https://www.pexels.com/photo/old-medieval-ruins-of-dunluce-castle-on-ocean-coast-in-northern-ireland-famous-place-in-uk-2350368/');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2);
+}
+
+.foreground {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 7rem;
+    z-index: 1;
+}
+
+section {
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: darkgray;
+}
